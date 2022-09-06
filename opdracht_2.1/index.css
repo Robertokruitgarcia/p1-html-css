@@ -1,0 +1,26 @@
+.standard_font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color1 {
+    color: gray;
+}
+
+h1 {
+    color: red;
+}
+
+a:active {
+    color: lightsalmon;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
