@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3.2</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>TUI</h1>
+    <form>
+        <h2>Informatie</h2>
+        <label for="Voornaam">Voornaam:</label>
+        <input pattern="[a-zA-Z]+" id="Voornaam" type="text" placeholder="Peter"><br><br>
+
+        <label for="Achternaam">Achternaam:</label>
+        <input pattern="[a-zA-Z]+" id="Achternaam" type="text" placeholder="Alexander"><br><br>
+        
+        <label for="BSN">BSN nummer:</label>
+        <input style="width: 100px;" id="BSN" type="number" placeholder="123456789" maxlength="9"><br><br>
+
+        <input type='radio' name='gender' checked="checked" ng-model='genderValue' value='male' ng-checked='genderValue === male'/> Male
+        <input type='radio' name='gender' ng-model='genderValue' value='female' ng-checked='genderValue === female'/> Female <br><br>
+
+        <br>
+        <label for="Straat met huisnummer">Straat met huisnummer:</label>
+        <input id="Straat met huisnummer" type="text" placeholder="Sportlaan 15">
+
+        <label for="Postcode">Postcode:</label>
+        <input pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="Postcode" type="text" placeholder="1234AB"><br><br>
+
+        <label for="Land">Land:</label>
+        <input pattern="[a-zA-Z]+" id="Land" type="text" placeholder="Nederland">
+
+        <label for="Stad">Stad:</label>
+        <input pattern="[a-zA-Z]+" id="Stad" type="text" placeholder="Rotterdam"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
