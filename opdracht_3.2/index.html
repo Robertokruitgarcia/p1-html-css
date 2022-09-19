@@ -14,57 +14,72 @@
         <header>
             <h2>Informatie</h2>
         </header>
-        <label for="Voornaam">Voornaam:</label>
-        <input pattern="[a-zA-Z]+" id="Voornaam" type="text" placeholder="Peter"><br><br>
-
-        <label for="Achternaam">Achternaam:</label>
-        <input pattern="[a-zA-Z]+" id="Achternaam" type="text" placeholder="Alexander"><br><br>
-
-        <label for="BSN">BSN nummer:</label>
-        <input style="width: 100px;" id="BSN" type="number" placeholder="123456789" max="999999999"><br><br>
-
-        <input type='radio' name='gender' checked="checked" ng-model='genderValue' value='male'
+        <div>
+            <label for="voornaam">Voornaam:</label>
+            <input pattern="[a-zA-Z]+" id="voornaam" type="text" placeholder="Peter">
+        </div>
+        <div>
+            <label for="achternaam">Achternaam:</label>
+            <input pattern="[a-zA-Z]+" id="achternaam" type="text" placeholder="Alexander">
+        </div>
+        <div>
+            <label for="bsn">BSN nummer:</label>
+            <input style="width: 100px;" id="bsn" type="number" placeholder="123456789" max="999999999">
+        </div>
+        <div>
+            <input type='radio' name='gender' checked="checked" ng-model='genderValue' value='male'
             ng-checked='genderValue === male' /> Male
-        <input type='radio' name='gender' ng-model='genderValue' value='female' ng-checked='genderValue === female' />
-        Female <br><br>
-
-        <br>
-        <label for="Straat met huisnummer">Straat met huisnummer:</label>
-        <input id="Straat met huisnummer" type="text" placeholder="Sportlaan 15">
-
-        <label for="Postcode">Postcode:</label>
-        <input pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="Postcode" type="text" placeholder="1234AB"><br><br>
-
-        <label for="Land">Land:</label>
-        <input pattern="[a-zA-Z]+" id="Land" type="text" placeholder="Nederland">
-
-        <label for="Stad">Stad:</label>
-        <input pattern="[a-zA-Z]+" id="Stad" type="text" placeholder="Rotterdam"><br><br>
+        <input type='radio' name='gender' ng-model='genderValue' value='female' ng-checked='genderValue === female' />Female
+        </div>
+        <div>
+            <label for="smt">Straat met huisnummer:</label>
+            <input id="smt" type="text" placeholder="Sportlaan 15">
+        </div>
+        <div>
+            <label for="postcode">Postcode:</label>
+            <input pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="Postcode" type="text" placeholder="1234AB">
+        </div>
+        <div>
+            <label for="land">Land:</label>
+            <input pattern="[a-zA-Z]+" id="Land" type="text" placeholder="Nederland">
+        </div>
+        <div>
+            <label for="stad">Stad:</label>
+            <input pattern="[a-zA-Z]+" id="Stad" type="text" placeholder="Rotterdam">
+        </div>
+        <div>
+            <label for="bs">Kies uw bestemming:</label>
+            <select id="bs">
+                <option value="Uganda">Uganda</option>
+                <option value="Mali">Mali</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">Noord-korea</option>
+            </select>
+        </div>
 
         <h2>Plan reis</h2>
-        <label for="bs">Kies uw bestemming:</label>
-        <select id="bs">
-            <option value="Uganda">Uganda</option>
-            <option value="Mali">Mali</option>
-            <option value="Pakistan">Pakistan</option>
-            <option value="India">Noord-korea</option>
-        </select><br><br>
-
-        <label for="DDV">Datum van vertrek:</label>
-        <input id="DVV" type="date" min="2022-09-12"><br><br>
-
-        <label for="DVT">Datum van terugkomst:</label>
-        <input id="DVT" type="date" min="2022-09-12"><br><br>
-
-        <label for="AR">Aantal reisgenoten:</label>
-        <input id="AR" type="number" min="1" max="4"><br><br>
+        <div>
+            <label for="ddv">Datum van vertrek:</label>
+            <input id="ddv" type="date" min="2022-09-12">
+        </div>
+        <div>
+            <label for="dvt">Datum van terugkomst:</label>
+            <input id="dvt" type="date" min="2022-09-12"><br><br>
+        </div>
+        <div>
+            <label for="ar">Aantal reisgenoten:</label>
+            <input id="ar" type="number" min="1" max="4">
+        </div>
 
         <h2>Account</h2>
-        <label for="EM">E-mail:</label>
-        <input id="EM" type="email"><br><br>
-
-        <label for="PASS">Password:</label>
-        <input id="PASS" type="password"><br><br>
+        <div>        
+            <label for="em">E-mail:</label>
+            <input id="em" type="email">
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input id="pass" type="password">
+        </div>
 
         <input type="submit" value="Boek nu">
     </form>
