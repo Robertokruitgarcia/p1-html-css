@@ -1,3 +1,10 @@
+.headertags{
+    color: white;
+    font-weight: bold;
+}
+
+body{font-family: Arial, Helvetica, sans-serif;}
+
 h1{
  font-size: 24px;   
  color: blue;
@@ -17,16 +24,28 @@ h3{
     font-weight: bold; 
 }
 
-p{
-    color: #4D4D4D;
-}
-
-.paragraph{
-    font-weight: bold;
-}
+p{color: #4D4D4D;}
 
 
 a{
     color:  #8A2BE2;
     text-decoration: none;
+}
+
+img{width: 50vw;}
+
+header{
+    height: 70vh;
+    width: 100vw;
+    background-image: url(./img/image.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article{
+    border: black;
+    border-radius: 7px; 
+    border-style: dotted;
+    border-left-width: thick; 
+    border-left-style: solid;
 }
