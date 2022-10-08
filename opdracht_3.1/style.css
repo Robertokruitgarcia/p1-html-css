@@ -13,16 +13,17 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(0, 95, 219);
+    background-color: rgb(0, 168, 219);
 }
 
 li {
-    background-color: rgb(0, 95, 219);
+    background-color: rgb(0, 168, 219);
     float: right;
+    height: 100%;
 }
 
 li a {
-    background-color: rgb(0, 95, 219);
+    background-color: rgb(0, 168, 219);
     display: block;
     color: white;
     text-align: center;
@@ -31,11 +32,11 @@ li a {
 }
   
 li a:hover {
-    background-color: rgb(0, 85, 219);
+    background-color: rgb(0, 160, 219);
 }
 
 .hacker{
-    background-color: rgb(0, 95, 219);
+    background-color: rgb(0, 168, 219);
     width: 2.4rem;
     float: left;
     padding-top: 0.8vh;
@@ -67,7 +68,7 @@ h2{
 }
 
 .copyright{
-    background-color: rgb(0, 95, 219);
+    background-color: rgb(0, 168, 219);
     height: 3.2rem;
 }
 
@@ -88,5 +89,31 @@ p{
 .header{
     max-height: 10vh;
     min-height: 10vh;
+}
+
+.selected:hover .menu{
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+}
+
+.menu li a{
+    background-color: aliceblue;
+}
+
+.menu li a:hover{
+    background-color: #E9E9E9;
+}
+
+.menu{
+    display: none;
+    background: aliceblue;
+    color: rgb(0, 168, 219);
+}
+
+.selected:hover a{
+    background-color: aliceblue;
+    color: rgb(0, 168, 219);
 }
 
